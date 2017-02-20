@@ -1,4 +1,6 @@
+@charset "UTF-8";
 
+/*Global Styles*/
 h2, h3, h4, h5, h6, p, a
 {
 	font-family: 'Montserrat', sans-serif;
@@ -9,10 +11,13 @@ h2
 	font-size: 40px;
 	font-weight: bold;
 }
+
 p
 {
 	font-size: 18px;
 }
+
+/*Header*/
 
 .title-bar
 {
@@ -25,6 +30,19 @@ p
 .title-bar .menu-icon
 {
     margin-right: 0rem;
+}
+
+#header
+{
+	background: url('../images/banner-mobile.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 100%;
+	max-width: 100%;
 }
 
 .menu-icon
@@ -120,6 +138,8 @@ p
 	padding-top: 10px;
 }
 
+/*Info*/
+
 #info
 {
 	padding: 20px;
@@ -133,19 +153,12 @@ p
 	margin-top: 10%;
 }
 
-#header
+#lifeSec1
 {
-	background: url('../images/banner-mobile.jpg');
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0 auto;
-	text-align: center;
-	min-height: 100%;
-	max-width: 100%;
+	opacity: 0;
 }
 
+/*Stories*/
 
 #stories
 {
@@ -162,6 +175,13 @@ p
 {
 	color: #b2264d;
 }
+
+#lifeSec2
+{
+	opacity: 0;
+}
+
+/*Facts*/
 
 #facts
 {
@@ -195,6 +215,11 @@ p
 #fact1
 {
 	margin-top: 20%;
+}
+
+#lifeSec3
+{
+	opacity: 0;
 }
 
 #infoGraphic
@@ -233,6 +258,11 @@ p
 #register h3:nth-child(3)
 {
 	margin-bottom: 25px;
+}
+
+#lifeSec4
+{
+	opacity: 0;
 }
 
 /*Footer*/
