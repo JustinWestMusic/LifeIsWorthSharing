@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/*FONTS*/
+
+@font-face 
+{
+    font-family: 'rubikregular';
+    src: url('../fonts/rubik-regular-webfont.eot');
+    src: url('../fonts/rubik-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('../fonts/rubik-regular-webfont.woff') format('woff'),
+         url('../fonts/rubik-regular-webfont.ttf') format('truetype'),
+         url('../fonts/rubik-regular-webfont.svg#rubikregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GLOBAL STYLES*/
+
+body
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#777d89+0,3f4c6b+100 */
+	background: #777d89; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #777d89 0%, #3f4c6b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #777d89 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #777d89 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777d89', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	font-family: rubikregular, Arial, sans-serif;
+	color: white;
+}
+
+p, a
+{
+	font-size: 1.2em;
+}
+a
+{
+	color: white;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color: white;
+}
+
+/*LOGIN*/
+
+#adminH1
+{
+	margin-top: 50px;
+	color: white;
+	text-align: center;
+	font-family: rubikregular, Arial, sans-serif;
+	font-size: 3em;
+	margin-bottom: 40px;
+}
+
+#form
+{
+	text-align: center;
+	background-color: rgba(210,210,210,0.2);
+	border-radius: 2px;
+	padding: 15px 0px 25px 0px;
+	min-width: 100%;
+}
+
+label
+{
+	color: white;
+	font-size: 1.4em;
+}
+
+#username[type="text"]
+{
+	margin: 0 auto;
+	width: 300px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 2px;
+	font-family: rubikregular, Arial, sans-serif;
+}
+
+
+
+#password[type="password"]
+{
+	margin: 0 auto;
+	width: 300px;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 2px;
+	font-family: rubikregular, Arial, sans-serif;
+}
+
+
+#submit
+{
+	background-color: white;
+	border-radius: 2px;
+	border-style: none;
+	padding: 5px;
+	width: 125px;
+	transition: all .3s ease-in-out;
+	font-family: rubikregular, Arial, sans-serif;
+}
+
+#submit:hover
+{
+	background-color: #EBEBEB;
+	cursor: pointer;
+}
+
+/*INDEX*/
+
+#adminSection
+{
+	min-width: 100%;
+}
+
+#welcomePanel
+{
+	
+}
+
+.userName
+{
+	display: inline;
+	margin-right: 25px;
+}
+
+.logOut
+{
+	display: inline;
+}
+
+#lastLogin
+{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.editAccount
+{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.createNU
+{
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+#welcomePanel h2
+{
+	color: white;
+	text-align: left;
+	font-family: rubikregular, Arial, sans-serif;
+	font-size: 3em;
+}
+
+#sidePanel
+{
+	background-color: rgba(210,210,210,0.2);
+}
+
+.button
+{
+	display: block;
+	width: 100%;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+/*Edit and Create User*/
+
+.createUserForm
+{
+	margin-top: 20px;
+}
+
+.editUserForm
+{
+	margin-top: 20px;
+}
