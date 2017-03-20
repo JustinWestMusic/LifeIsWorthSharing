@@ -76,18 +76,14 @@
 
        <section  class="row centerTxt" id="info">
          <div class="small-12 large-8 small-centered columns" id="lifeSec1">
-           <h2>OUR MISSION</h2>
-           <p>As of September 2016 over 1,500 individuals in Ontario are in
-             need of an organ donation. However due to the low number of
-             registered citizens many individuals must wait too long to recieve one.
-             Only 30% of Ontarians are registered Organ Donors but this can all change with the help
-             of you. Together, we can increase the number of organ donors in Ontario! </p>
+           <h2><?php echo $row['index_sec1Title']; ?></h2>
+           <p><?php echo $row['index_sec1Text']; ?></p>
          </div>
        </section>
 
        <section class="row-epanded centerTxt" id="stories">
          <div class="small-12 large-8 small-centered columns" id="lifeSec2">
-           <h2>HEAR <span class="colourChng">THEIR</span> STORIES</h2>
+           <h2><?php echo $row['index_sec2Title']; ?></h2>
            <img src="images/video.gif" alt="Stories">
          </div>
        </section>
