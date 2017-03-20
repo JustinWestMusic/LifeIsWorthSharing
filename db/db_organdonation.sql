@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2017 at 10:50 PM
+-- Generation Time: Mar 20, 2017 at 12:51 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -28,15 +28,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_index` (
   `index_id` smallint(5) UNSIGNED NOT NULL,
-  `index_headerCaption` varchar(300) NOT NULL
+  `index_headerCaption` varchar(300) NOT NULL,
+  `index_sec1Title` varchar(300) NOT NULL,
+  `index_sec1Text` text NOT NULL,
+  `index_sec2Title` varchar(300) NOT NULL,
+  `index_sec2Video` varchar(300) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_index`
 --
 
-INSERT INTO `tbl_index` (`index_id`, `index_headerCaption`) VALUES
-(1, 'LIFE IS SO WORTH SHARING');
+INSERT INTO `tbl_index` (`index_id`, `index_headerCaption`, `index_sec1Title`, `index_sec1Text`, `index_sec2Title`, `index_sec2Video`) VALUES
+(1, 'LIFE IS WORTH SHARING', 'OUR MISSION', 'As of September 2016 over 1,500 individuals in Ontario are in need of an organ donation. However due to the low number of registered citizens many individuals must wait too long to recieve one. Only 30% of Ontarians are registered Organ Donors but this can all change with the help of you. Together, we can increase the number of organ donors in Ontario!', 'HEAR THEIR STORIES', '');
 
 -- --------------------------------------------------------
 
@@ -94,7 +98,7 @@ ALTER TABLE `tbl_index`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
