@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 20, 2017 at 12:51 AM
+-- Generation Time: Mar 21, 2017 at 08:24 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -67,7 +67,25 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_lname`, `user_email`, `user_name`, `user_pass`, `user_level`, `user_ip`, `user_lldate`, `user_attempts`, `user_firstLogin`) VALUES
-(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-16 22:24:13', 0, 1);
+(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-21 18:30:48', 0, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_videos`
+--
+
+CREATE TABLE `tbl_videos` (
+  `videos_id` smallint(5) UNSIGNED NOT NULL,
+  `video` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_videos`
+--
+
+INSERT INTO `tbl_videos` (`videos_id`, `video`) VALUES
+(1, 'test.mp4');
 
 --
 -- Indexes for dumped tables
@@ -86,6 +104,12 @@ ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `tbl_videos`
+--
+ALTER TABLE `tbl_videos`
+  ADD PRIMARY KEY (`videos_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -99,6 +123,11 @@ ALTER TABLE `tbl_index`
 --
 ALTER TABLE `tbl_user`
   MODIFY `user_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `tbl_videos`
+--
+ALTER TABLE `tbl_videos`
+  MODIFY `videos_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
