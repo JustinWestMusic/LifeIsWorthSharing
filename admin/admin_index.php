@@ -21,7 +21,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
@@ -57,13 +57,10 @@
 
 	</section>
 
-
-
-
-	<script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+	<script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/app.js"></script>
 	
 </body>
 </html>

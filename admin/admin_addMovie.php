@@ -28,40 +28,52 @@
 
 ?>
 <!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Add Movie</title>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Video</title>
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<h1>Add Movie</h1>
-<?php if(!empty($message)){echo $message;} ?>
-<form action="admin_addMovie.php" method="post" enctype="multipart/form-data">
-<label>Front Image:</label><br>
-<input type="file" name="movie_fimg" value="" size="32"><br><br>
-<label>Movie Title:</label><br>
-<input type="text" name="movie_title" value="" size="32" ><br><br>
-<label>Movie Year:</label><br>
-<input type="text" name="movie_year" value="" size="32" ><br><br>
-<label>Movie Storyline:</label><br>
-<input type="text" name="movie_storyline" value="" size="32" ><br><br>
-<label>Movie Runtime:</label><br>
-<input type="text" name="movie_runtime" value="" size="32" ><br><br>
-<label>Movie Trailer:</label><br>
-<input type="text" name="movie_trailer" value="" size="32" ><br><br>
-<label>Movie Price:(Do not add '$', the system will add this in)</label><br>
-<input type="text" name="movie_price" value="" size="32" ><br><br>
-<label>Select Category:</label><br>
-<select name="catlist" >
-	<option value="">Please Select One...</option>
-<?php
-	while($row = mysqli_fetch_array($catQuery))
-	{
-		echo "<option value=".$row['cat_id'].">".$row['cat_name']."</option>";
-	}
-?>
-</select><br><br><br><br>
-<input type="submit" name="submit" value="Add" >
-</form>
+<h1 class="hide">Add Movie</h1>
+
+	<section class="row">
+
+	<div class="small-12 column">
+
+		<h2>Add Movie</h2>
+
+		<?php if(!empty($message)){echo $message;} ?>
+		<form action="admin_addMovie.php" method="post" enctype="multipart/form-data">
+		<label>Front Image:</label><br>
+		<input type="file" name="movie_fimg" value="" size="32"><br><br>
+		<label>Movie Title:</label><br>
+		<input type="text" name="movie_title" value="" size="32" ><br><br>
+		<label>Movie Year:</label><br>
+		<input type="text" name="movie_year" value="" size="32" ><br><br>
+		<label>Movie Storyline:</label><br>
+		<input type="text" name="movie_storyline" value="" size="32" ><br><br>
+		<label>Movie Runtime:</label><br>
+		<input type="text" name="movie_runtime" value="" size="32" ><br><br>
+		<label>Movie Trailer:</label><br>
+		<input type="text" name="movie_trailer" value="" size="32" ><br><br>
+		<label>Movie Price:(Do not add '$', the system will add this in)</label><br>
+		<input type="text" name="movie_price" value="" size="32" ><br><br>
+		<input type="submit" name="submit" value="Add" >
+		</form>
+
+	</div>
+
+	</section>
+
+
+	<script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/what-input.js"></script>
+    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/app.js"></script>
+
 </body>
 </html>
