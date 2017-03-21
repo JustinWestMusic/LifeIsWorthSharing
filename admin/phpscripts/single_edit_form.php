@@ -6,9 +6,9 @@
         
         echo "<form action=\"phpscripts/edit.php\" method=\"post\">";
         
-            echo "<input hidden type=\"text\" name=\"tbl\" value=\"{$tbl}\"/>";
-            echo "<input hidden type=\"text\" name=\"col\" value=\"{$col}\"/>";
-            echo "<input hidden type=\"text\" name=\"id\" value=\"{$id}\"/>";
+            echo "<input class=\"hide\" type=\"text\" name=\"tbl\" value=\"{$tbl}\"/>";
+            echo "<input class=\"hide\" type=\"text\" name=\"col\" value=\"{$col}\"/>";
+            echo "<input class=\"hide\" type=\"text\" name=\"id\" value=\"{$id}\"/>";
             
             for($i=0; $i<mysqli_num_fields($result); $i++)
             {

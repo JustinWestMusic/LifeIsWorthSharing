@@ -15,11 +15,15 @@
 
     $qstring = "UPDATE {$tbl} SET ";
 
-    foreach($_POST as $key => $value){
+    foreach($_POST as $key => $value)
+    {
         $count++;
-        if($count != $num){
+        if($count != $num)
+        {
             $qstring .= $key."='".$value."', "; 
-        }else{
+        }
+        else
+        {
             $qstring .= $key."='".$value."' "; 
         }
     }
