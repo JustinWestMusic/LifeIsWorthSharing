@@ -5,6 +5,9 @@
     $tbl = "tbl_index";
     $getElements = getAll($tbl);
 
+    $mtbl = "tbl_videos";
+    $getVideos = getAll2($mtbl);
+
 ?>
 
 <!doctype html>
@@ -84,7 +87,21 @@
        <section class="row-epanded centerTxt" id="stories">
          <div class="small-12 large-8 small-centered columns" id="lifeSec2">
            <h2><?php echo $row['index_sec2Title']; ?></h2>
+
+      <?php endwhile; ?>
+
+      <?php endif; ?>
+
+      <?php if(!is_string($getVideos)) :?>
+        
+          <?php while($row = mysqli_fetch_array($getVideos)) : ?>
            <img src="images/video.gif" alt="Stories">
+           
+           <?php echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
+
+      <?php endwhile; ?>
+
+      <?php endif; ?>
          </div>
        </section>
 
@@ -145,10 +162,6 @@
     </div>
 </footer>
 </div>
-
-      <?php endwhile; ?>
-
-      <?php endif; ?>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
