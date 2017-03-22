@@ -44,7 +44,7 @@ $(document).foundation();
 		windowPos = window.scrollY;
 		spacing = ourMission.offsetTop;
 
-		if(windowPos+300>spacing)
+		if(windowPos+500>spacing)
 		{
 			TweenMax.from("#lifeSec1", 2, {opacity:0});
 			TweenMax.to("#lifeSec1", 2, {opacity:1});
@@ -57,7 +57,7 @@ $(document).foundation();
 		windowPos = window.scrollY;
 		spacing = stories.offsetTop;
 
-		if(windowPos+200>spacing)
+		if(windowPos+500>spacing)
 		{
 			TweenMax.from("#lifeSec2", 2, {opacity:0});
 			TweenMax.to("#lifeSec2", 2, {opacity:1});
@@ -70,7 +70,7 @@ $(document).foundation();
 		windowPos = window.scrollY;
 		spacing = facts.offsetTop;
 
-		if(windowPos+200>spacing)
+		if(windowPos+500>spacing)
 		{
 			TweenMax.from("#lifeSec3", 2, {opacity:0});
 			TweenMax.to("#lifeSec3", 2, {opacity:1});
@@ -83,7 +83,7 @@ $(document).foundation();
 		windowPos = window.scrollY;
 		spacing = register.offsetTop;
 
-		if(windowPos+300>spacing)
+		if(windowPos+500>spacing)
 		{
 			TweenMax.from("#lifeSec4", 2, {opacity:0});
 			TweenMax.to("#lifeSec4", 2, {opacity:1});
