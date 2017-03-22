@@ -26,7 +26,7 @@
   </head>
 
   <body>
-  <h1 class="hide">Life is worth sharing</h1>
+  <h1 class="hide">Life Is Worth Sharing</h1>
 	<div id="header">
     <header class="row-expanded">
     <h2 class="hide">Main Header</h2>
@@ -45,7 +45,7 @@
             <li><a href="#" id="1">About</a></li>
             <li><a href="#" id="2">Stories</a></li>
             <li><a href="#" id="3">Facts</a></li>
-            <h4 id="headerRegBtn" class="float-right"><a href="https://www.giftoflife.on.ca/en/" id="4">Register</a></h4>
+            <h4 id="headerRegBtn" class="small-centered"><a id="4">Register</a></h4>
 
        </ul>
        </div>
@@ -97,7 +97,7 @@
           <?php while($row = mysqli_fetch_array($getVideos)) : ?>
            <img src="images/video.gif" alt="Stories">
            
-           <?php echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
+           <?php //echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
 
       <?php endwhile; ?>
 
@@ -115,7 +115,9 @@
 
 
 <section class="row-expanded centerTxt" id="promoVid">
+<div class="small-12 columns">
 <h2><span class="colourChng">#LIFE</span>IS<span class="colourChng">WORTH</span>SHARING</h2>
+</div>
        <div class="row-expanded centerTxt" id="infoGraphic">
          <div class="small-12 large-8 small-centered columns">
            <img src="images/video.gif" alt="Stories">
@@ -144,11 +146,12 @@
   <h4 id="sm">Follow us on social media!</h4>
 
   <div class="text-center" id="socialIcons">
-  <a href="#"><img src="images/facebook.svg" class="icons" alt="Facebook"></a>
 
-  <a href="#"><img src="images/instagram.svg" class="icons" alt="Instagram"></a>
+    <a href="#"><img src="images/facebook.svg" class="icons" alt="Facebook"></a>
 
-<a href="#"><img src="images/twitter.svg" class="icons" alt="Twitter"></a>
+    <a href="#"><img src="images/instagram.svg" class="icons" alt="Instagram"></a>
+
+    <a href="#"><img src="images/twitter.svg" class="icons" alt="Twitter"></a>
  </div>
 
     <div id="trillium" class="small-12">
