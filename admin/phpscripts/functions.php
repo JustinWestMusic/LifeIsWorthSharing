@@ -50,46 +50,47 @@
 		   }
 	}
 
-	function addmovie($fimg, $thumb, $title, $year, $storyline, $runtime, $trailer, $price, $cat) 
+	function addVideo($video, $videoTitle) 
 	{
 		include("connect.php");
 
 		//echo "from addMovie()";
 		
-		$fimg  = mysqli_real_escape_string($link, $fimg);
+		$video  = mysqli_real_escape_string($link, $video);
 
-		if($_FILES['movie_fimg']['type'] == "image/jpg" || $_FILES['movie_fimg']['type'] == "image/jpeg")//this is not a location it is a file type
+		if($_FILES['video']['type'] == "video/mp4")//this is not a location it is a file type
 		{
 			//echo "this is a jpg";
 			
-			$targetpath = "../images/{$fimg}";
+			$targetpath = "../videos/{$video}";
 
-			if(move_uploaded_file($_FILES['movie_fimg']['tmp_name'], $targetpath))
+			if(move_uploaded_file($_FILES['video']['tmp_name'], $targetpath))
 			{
 				//echo "file moved";
 				
-				$orig = "../images/{$fimg}";
-				$th_copy = "../images/{$thumb}";
+				//$orig = "../videos/{$video}";
+				/*$orig2 = "../videos/{$video}";
+				
 
-				if(!copy($orig, $th_copy))
+				if(!copy($orig, $orig2))
 				{
 					echo "failed to copy";
-				}
+				}*/
 
 				//$size = getimagesize($orig);
 				//echo $size[0]."x".$size[1];
 				
-				$qstring = "INSERT INTO tbl_movies VALUES(NULL, '{$thumb}','{$fimg}','noBG.jpg','{$title}','{$year}','{$storyline}','{$runtime}','{$trailer}','{$price}')";
+				$qstring = "INSERT INTO tbl_videos VALUES(NULL, '{$video}','{$videoTitle}')";
 				//echo $qstring;
 				$result = mysqli_query($link, $qstring);
 				
 				if($result == 1)
 				{
-					$qstring2 = "SELECT * FROM tbl_movies ORDER BY movies_id DESC LIMIT 1";
+					$qstring2 = "SELECT * FROM tbl_videos ORDER BY videos_id DESC LIMIT 1";
 					$result2 = mysqli_query($link, $qstring2);
 					
 					$row = mysqli_fetch_array($result2);
-					$lastID = $row['movies_id'];
+					$lastID = $row['videos_id'];
 					
 					//$qstring3 = "INSERT INTO tbl_l_mc VALUES(NULL, '{$lastID}','{$cat}')";
 					//$result3 = mysqli_query($link, $qstring3);
@@ -101,7 +102,7 @@
 		}
 		else
 		{
-			echo "Sorry you have uploaded an incompatible file type. Please remember that only .MP4s will be accepted.";
+			echo "Sorry you have either uploaded an incompatible file type or a file larger than 2mb. Please remember that only .MP4s and file sizes smaller than 2mb will be accepted!";
 		}
 
 		mysqli_close($link);
