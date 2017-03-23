@@ -33,13 +33,13 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<h1 class="hide">Add Movie</h1>
+<h1 class="hide">Add a Video</h1>
 
 	<section class="row">
 
 	<div class="small-12 column">
 
-		<h2>Add Movie</h2>
+		<h2>Add a Video</h2>
 
 		<?php if(!empty($message)){echo $message;} ?>
 		<form action="admin_addMovie.php" method="post" enctype="multipart/form-data">
@@ -57,7 +57,7 @@
 
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
-    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/vendor/foundation.min.js"></script>
     <script src="../js/app.js"></script>
 
 </body>
