@@ -95,9 +95,9 @@
       <?php if(!is_string($getVideos)) :?>
         
           <?php while($row = mysqli_fetch_array($getVideos)) : ?>
-           <img src="images/video.gif" alt="Stories">
            
-           <?php //echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
+           <?php echo "<h2>{$row['videos_title']}</h2>"; ?>
+           <?php echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
 
       <?php endwhile; ?>
 
