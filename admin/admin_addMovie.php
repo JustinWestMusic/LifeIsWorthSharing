@@ -3,25 +3,20 @@
 	//ini_set('display_errors',1);
     //error_reporting(E_ALL);
 	
-	$tbl = "tbl_cat";
-	$catQuery = getAll($tbl);
+	$tbl = "tbl_videos";
+	$catQuery = getAll3($tbl);
 
 
 	if(isset($_POST['submit'])) 
 	{
 		//echo "submit clicked...";
 
-		$fimg = $_FILES['movie_fimg']['name'];
-		//echo $fimg;
-		$thumb = "TH_{$fimg}";
-		$title = $_POST['movie_title'];
-		$year = $_POST['movie_year'];
-		$storyline = $_POST['movie_storyline'];
-		$runtime = $_POST['movie_runtime'];
-		$price = $_POST['movie_price'];
-		$cat = $_POST['catlist'];
-		$uploadMovie = addMovie($fimg,$thumb,$title,$year,$storyline,$runtime,$price,$cat);
-		$message = $uploadMovie;
+		$video = $_FILES['video']['name'];
+		//echo $video;
+		$videoTitle = $_POST['video_title'];
+
+		$uploadVideo = addVideo($video, $videoTitle);
+		$message = $uploadVideo;
 
 	}
 
@@ -48,20 +43,10 @@
 
 		<?php if(!empty($message)){echo $message;} ?>
 		<form action="admin_addMovie.php" method="post" enctype="multipart/form-data">
-		<label>Front Image:</label><br>
-		<input type="file" name="movie_fimg" value="" size="32"><br><br>
-		<label>Movie Title:</label><br>
-		<input type="text" name="movie_title" value="" size="32" ><br><br>
-		<label>Movie Year:</label><br>
-		<input type="text" name="movie_year" value="" size="32" ><br><br>
-		<label>Movie Storyline:</label><br>
-		<input type="text" name="movie_storyline" value="" size="32" ><br><br>
-		<label>Movie Runtime:</label><br>
-		<input type="text" name="movie_runtime" value="" size="32" ><br><br>
-		<label>Movie Trailer:</label><br>
-		<input type="text" name="movie_trailer" value="" size="32" ><br><br>
-		<label>Movie Price:(Do not add '$', the system will add this in)</label><br>
-		<input type="text" name="movie_price" value="" size="32" ><br><br>
+		<label>Video:</label><br>
+		<input type="file" name="video" value="" size="32"><br><br>
+		<label>Video Title:</label><br>
+		<input type="text" name="video_title" value="" size="32" ><br><br>
 		<input type="submit" name="submit" value="Add" >
 		</form>
 
