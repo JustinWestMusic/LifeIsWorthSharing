@@ -103,11 +103,11 @@ header
 {
 	background-color: #cf5662;
 	min-width: 100%;
-	margin-bottom: 10px;
     padding-right: 0rem;
     height: 60px;
+    position: sticky;
+    z-index: 1;
 }
-
 
 #icon
 {
@@ -156,23 +156,9 @@ header
 
 }
 
-.editAccount
-{
-	display: block;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.createNU
-{
-	display: block;
-	margin-bottom: 20px;
-}
-
-
 #welcomePanel h2
 {
-	color: white;
+	color: black;
 	text-align: left;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 3em;
@@ -180,7 +166,7 @@ header
 
 #sidePanel
 {
-	background-color: rgba(210,210,210,0.2);
+	background-color: #cf5662;
 }
 
 .button
