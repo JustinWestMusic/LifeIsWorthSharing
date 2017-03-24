@@ -51,14 +51,9 @@
        </div>
         </nav>
 
-
-
         <div class="small-12 medium-10 large-8 colums" id="headerCapt">
         
-
-        <?php if(!is_string($getElements)) :?>
-        
-          <?php while($row = mysqli_fetch_array($getElements)) : ?>
+          <?php while($row = mysqli_fetch_array($getElements)): ?>
           
           <h2><?php echo $row['index_headerCaption']; ?></h2>
 
@@ -73,50 +68,45 @@
       <a href="#"><img src="images/twitter.svg" class="icons2" alt="Twitter"></a>
        </div>
 
-
       </header>
        </div>
 
        <section  class="row centerTxt" id="info">
          <div class="small-12 large-8 small-centered columns" id="lifeSec1">
+         
            <h2><?php echo $row['index_sec1Title']; ?></h2>
            <p><?php echo $row['index_sec1Text']; ?></p>
+      
          </div>
        </section>
 
        <section class="row-epanded centerTxt" id="stories">
          <div class="small-12 large-8 small-centered columns" id="lifeSec2">
            <h2><?php echo $row['index_sec2Title']; ?></h2>
-
-      <?php endwhile; ?>
-
-      <?php endif; ?>
-
-      <?php if(!is_string($getVideos)) :?>
-        
-          <?php while($row = mysqli_fetch_array($getVideos)) : ?>
            
-           <?php echo "<h2>{$row['videos_title']}</h2>"; ?>
-           <?php echo "<video controls> <source src=\"videos/{$row['video']}\" type=\"video/mp4\"> </video>"; ?>
+          <?php while($row2 = mysqli_fetch_array($getVideos)): ?>
+           
+           <?php echo "<h2>{$row2['videos_title']}</h2>"; ?>
+           <?php echo "<video controls> <source src=\"videos/{$row2['video']}\" type=\"video/mp4\"> </video>"; ?>
 
-      <?php endwhile; ?>
+           <?php endwhile; ?>
 
-      <?php endif; ?>
          </div>
        </section>
 
        <section class="row-expanded centerTxt" id="facts">
          <div class="small-12 medium-10 small-centered large-8 columns" id="lifeSec3">
-           <h2>DID <span class="colourChng">YOU</span> KNOW?</h2>
-         <p id="fact1">90% of Canadians support organ and tissue donation but
-           less than 20% have made plans to donate.</p>
+
+           <h2><?php echo $row['index_sec3Title']; ?></h2>
+
+         <p id="fact1"><?php echo $row['index_sec3Fact1']; ?></p>
+           
          </div>
        </section>
 
-
 <section class="row-expanded centerTxt" id="promoVid">
 <div class="small-12 columns">
-<h2><span class="colourChng">#LIFE</span>IS<span class="colourChng">WORTH</span>SHARING</h2>
+<h2><span class="colourChng"><?php echo $row['index_promoVidSecTitle']; ?></h2>
 </div>
        <div class="row-expanded centerTxt" id="infoGraphic">
          <div class="small-12 large-8 small-centered columns">
@@ -125,19 +115,20 @@
             </div>
        </section>
 
-
       <section class="row-expanded centerTxt" id="register">
       <div class="small-12 small-centered columns" id="lifeSec4">
-           <h2>BECOME A <span class="colourChng">DONOR</span> TODAY</h2>
-           <h3>BECAUSE <span class="colourChng">LIFE IS WORTH SHARING</span></h3>
+           <h2><?php echo $row['index_sec4Title']; ?></h2>
+           <h3><?php echo $row['index_sec4Title2']; ?></h3>
 
-          <h3>Click the button below to become an organ donor today.</h3>
+          <h3><?php echo $row['index_sec4Text']; ?></h3>
+          <?php endwhile; ?>
 
           <a role="button" href="http://bit.ly/ontarioorgandonation" target="_blank" id="registerButton">Register</a>
 
       </div>
 
       </section>
+
 
 <div id="mainFooter">
 <footer class="row-expanded">
@@ -157,8 +148,6 @@
     <div id="trillium" class="small-12">
 
      <p id="tag">#LifeIsWorthSharing</p>
-
-
 
         <a href="https://www.giftoflife.on.ca/en/" target="_blank"><img id="tgln" src="images/trillium.png" alt="trillium-gift-of-life-network"></a>
         <p>Trillium Gift of Life Network</p>
