@@ -1,5 +1,5 @@
 <div id="header">
-    <header class="row-expanded">
+    <header class="row">
     <h2 class="hide">Main Header</h2>
 
    <nav id="mainNav" class="small-12 columns">
