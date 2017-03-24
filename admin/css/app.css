@@ -99,14 +99,15 @@ label
 
 /*TOP NAV*/
 
-header
+#header
 {
 	background-color: #cf5662;
-	min-width: 100%;
-    padding-right: 0rem;
-    height: 60px;
-    position: sticky;
     z-index: 1;
+}
+
+header
+{
+	min-width: 100%;
 }
 
 #icon
@@ -164,6 +165,8 @@ header
 	font-size: 3em;
 }
 
+/*Side Panel*/
+
 #sidePanel
 {
 	background-color: #cf5662;
@@ -187,4 +190,25 @@ header
 .editUserForm
 {
 	margin-top: 20px;
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) 
+{
+	#mainNav ul
+	{
+		margin-top: 10px;
+	}
+
+
+	#sidePanel
+	{
+		min-height: 100vh;
+	}
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) 
+{
+
 }
