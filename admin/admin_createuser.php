@@ -32,6 +32,15 @@
 
 ?>
 
+<?php
+	function beautifyDate($date)
+	{
+		return date('l F j, Y, g:i a', strtotime($date));
+		//Parses about any English textual datetime description into a Unix timestamp. To put it simply it converts numbers into letters and makes dates look more pretty.
+		//http://php.net/manual/en/function.date.php
+	}
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -44,17 +53,20 @@
   </head>
 <body>
 	
-	<header class="row">
-	<div class="small-12 column">
-	<h1>Create User</h1>
-	<a href="admin_index.php" class="goBack">Go Back</a>
-	</div>
-	</header>
 
-	<div class="row">
+	<h1 class="hide">Create User</h1>
+
+	<?php include('includes/header.php'); ?>
+
+
+	<section class="row-expanded">
+	
+	<?php include('includes/sidepanel.php'); ?>
+
+	<div class="small-push-12 medium-10 column">
 	<?php if (!empty($message)){echo $message;} ?>
-	<form action="admin_createuser.php" method="post" class="small-12 column createUserForm">
-	<h2 class="hide">Create User Form</h2>
+	<form action="admin_createuser.php" method="post" class="createUserForm">
+	<h2>Create User</h2>
 		<label>First Name:</label>
 		<input type="text" name="fname" value="<?php if (!empty($fname)){echo $fname;} ?>">
 		<label>Last Name:</label>
@@ -78,6 +90,10 @@
 
 	</form>
 	</div>
+
+	</section>
+
+	
 
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
