@@ -42,7 +42,7 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div id="welcomePanel" class="small-12 medium-10 column">
+	<div id="welcomePanel" class="small-12 medium-19 -large-10 column">
 	<h2 class="hide">Welcom Panel</h2>
 
 
