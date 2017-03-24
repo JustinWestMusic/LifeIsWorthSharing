@@ -38,11 +38,11 @@
  
 	   if(date("H") < 12)
 		   {
-		     return "this Morning?";
+		     return "today?";
 		   }
 	   elseif(date("H") > 11 && date("H") < 17)
 		   {
-		     return "this Afternoon?";
+		     return "today?";
 		   }
 	   elseif(date("H") > 16 && date("H") < 24)
 		   {
