@@ -1,7 +1,7 @@
 <?php
 	require_once('phpscripts/connect.php');
 	require_once('phpscripts/init.php');
-	confirm_logged_in()
+	confirm_logged_in();
 
 ?>
 
@@ -42,7 +42,7 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div id="welcomePanel" class="small-12 medium-19 -large-10 column">
+	<div class="small-12 medium-9 -large-10 column">
 	<h2 class="hide">Welcom Panel</h2>
 
 

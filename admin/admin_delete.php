@@ -20,6 +20,16 @@
   </head>
 <body>
 	<h1>Delete User</h1>
+
+	<?php include('includes/header.php'); ?>
+
+
+	<section class="row-expanded">
+
+
+	<?php include('includes/sidepanel.php'); ?>
+
+	<div id="welcomePanel" class="small-12 medium-19 -large-10 column">
 	<?php
 		while($row = mysqli_fetch_array($users))
 		{
@@ -27,6 +37,9 @@
 		}
 
 	?>
+
+	</div>
+	</section>
 
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>

@@ -1,11 +1,19 @@
 <?php
 	require_once('phpscripts/init.php');
-	//confirm_logged_in();
+	confirm_logged_in();
+
 	$tbl = "tbl_user";
 	$users = getAll($tbl);
 
+?>
 
-
+<?php
+	function beautifyDate($date)
+	{
+		return date('l F j, Y, g:i a', strtotime($date));
+		//Parses about any English textual datetime description into a Unix timestamp. To put it simply it converts numbers into letters and makes dates look more pretty.
+		//http://php.net/manual/en/function.date.php
+	}
 ?>
 
 <!doctype html>
@@ -19,7 +27,17 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
-	<h1>Delete User</h1>
+	<h1 class="hide">Delete User</h1>
+
+	<?php include('includes/header.php'); ?>
+
+
+	<section class="row-expanded">
+
+
+	<?php include('includes/sidepanel.php'); ?>
+
+	<div class="small-12 medium-9 -large-10 column">
 	<?php
 		while($row = mysqli_fetch_array($users))
 		{
@@ -27,6 +45,9 @@
 		}
 
 	?>
+
+	</div>
+	</section>
 
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
