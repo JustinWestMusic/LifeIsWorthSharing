@@ -24,24 +24,30 @@
 
 ?>
 
+<?php
+	function beautifyDate($date)
+	{
+		return date('l F j, Y, g:i a', strtotime($date));
+		//Parses about any English textual datetime description into a Unix timestamp. To put it simply it converts numbers into letters and makes dates look more pretty.
+		//http://php.net/manual/en/function.date.php
+	}
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit User</title>
+    <title>Edit User Life is Worth Sharing</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
 
-	<header class="row">
-	<div class="small-12 column">
-	<h1>Edit User</h1>
-	<a href="admin_index.php" class="goBack">Go Back</a>
-	</div>
-	</header>
+<h1 class="hide">Edit User - Life is Worth Sharing</h1>
+
+	<?php include('includes/header.php'); ?>
 
 	<div class="row">
 	<?php if (!empty($message)){echo $message;} ?>

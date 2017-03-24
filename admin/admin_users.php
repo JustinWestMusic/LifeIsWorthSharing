@@ -20,7 +20,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Life is Worth Sharing</title>
+    <title>User Settings - Life is Worth Sharing</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -28,7 +28,7 @@
   </head>
 <body>
 
-	<h1 class="hide">Dashboard - Life is Worth Sharing</h1>
+	<h1 class="hide">User Settings - Life is Worth Sharing</h1>
 	
 
 	<?php include('includes/header.php'); ?>
@@ -38,20 +38,24 @@
 	
 	
 
-	<section class="row-expanded" id="adminSection">
+	<section class="row-expanded">
 
 	<?php include('includes/sidepanel.php'); ?>
 
 	<div id="welcomePanel" class="small-12 medium-10 column">
 	<h2 class="hide">Welcom Panel</h2>
-	<h2> <?php echo welcomeTime(); ?> <?php echo $_SESSION['users_fname']; ?>!</h2>
-	<p>What will you be doing <?php echo timeOfDay(); ?></p>
 
-	<a  href="admin_content.php">Content Settings</a>
 
-	<a href="admin_users.php">User Settings</a>
+	<a  href="admin_createuser.php">Create User</a>
+
+	<a href="admin_edituser.php">Edit User</a>
+
+	<a href="admin_deleteuser.php">Delete User</a>
 
 	</div>
+
+	
+	
 
 	</section>
 
