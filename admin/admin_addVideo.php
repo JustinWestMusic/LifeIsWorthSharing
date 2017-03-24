@@ -2,9 +2,11 @@
 	require_once('phpscripts/init.php');
 	//ini_set('display_errors',1);
     //error_reporting(E_ALL);
+
+    confirm_logged_in();
 	
 	$tbl = "tbl_videos";
-	$catQuery = getAll3($tbl);
+	$videoQuery = getAll3($tbl);
 
 
 	if(isset($_POST['submit'])) 
@@ -22,6 +24,16 @@
 
 
 ?>
+
+<?php
+	function beautifyDate($date)
+	{
+		return date('l F j, Y, g:i a', strtotime($date));
+		//Parses about any English textual datetime description into a Unix timestamp. To put it simply it converts numbers into letters and makes dates look more pretty.
+		//http://php.net/manual/en/function.date.php
+	}
+?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -35,9 +47,14 @@
 <body>
 <h1 class="hide">Add a Video</h1>
 
-	<section class="row">
+	<?php include('includes/header.php'); ?>
 
-	<div class="small-12 column">
+
+	<section class="row-expanded">
+
+	<?php include('includes/sidepanel.php'); ?>
+
+	<div class="small-12 medium-9 -large-10 column">
 
 		<h2>Add a Video</h2>
 
@@ -46,8 +63,8 @@
 		<label>Video:</label><br>
 		<input type="file" name="video" value="" size="32"><br><br>
 		<label>Video Title:</label><br>
-		<input type="text" name="video_title" value="" size="32" ><br><br>
-		<input type="submit" name="submit" value="Add" >
+		<input type="text" name="video_title" value="" size="32"><br><br>
+		<input type="submit" name="submit" value="Add">
 		</form>
 
 	</div>

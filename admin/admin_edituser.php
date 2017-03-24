@@ -49,9 +49,13 @@
 
 	<?php include('includes/header.php'); ?>
 
-	<div class="row">
+  <section class="row-expanded">
+
+  <?php include('includes/sidepanel.php'); ?>
+
+	<div class="small-12 medium-9 -large-10 column">
 	<?php if (!empty($message)){echo $message;} ?>
-	<form action="admin_edituser.php" method="post" class="small-12 column editUserForm">
+	<form action="admin_edituser.php" method="post" class="editUserForm">
 	<h2 class="hide">Edit User Form</h2>
 		<label>First Name:</label>
 		<input type="text" name="fname" value="<?php echo $popForm['user_fname']; ?>">
