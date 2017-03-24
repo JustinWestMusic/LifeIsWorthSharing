@@ -42,7 +42,7 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div id="welcomePanel" class="small-12 medium-10 column">
+	<div id="welcomePanel" class="small-12 medium-9 large-10 column">
 	<h2 class="hide">Welcom Panel</h2>
 	<h2> <?php echo welcomeTime(); ?> <?php echo $_SESSION['users_fname']; ?>!</h2>
 	<p>What will you be doing <?php echo timeOfDay(); ?></p>

@@ -34,19 +34,22 @@
 	<?php include('includes/header.php'); ?>
 
 
-	<section class="row" id="adminSection">
+	<section class="row-expanded" id="adminSection">
+
+	<?php include('includes/sidepanel.php'); ?>
+
+	<div id="welcomePanel" class="small-12 medium-9 large-10 column">
+
 	<div id="welcomePanel" class="small-12 medium-7 medium-push-5 column">
 	<h2 class="hide">Welcom Panel</h2>
 
 	<a  href="admin_addVideo.php">Add Videos</a>
 
-	<a href="admin_editContent.php">Edit Index</a>
+	<a href="admin_editContent.php">Edit Content</a>
 
 	<a href="admin_deleteContent.php">Delete Content</a>
 
 	</div>
-
-	<?php include('includes/sidepanel.php'); ?>
 	
 
 	</section>

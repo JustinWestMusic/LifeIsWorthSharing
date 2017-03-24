@@ -63,7 +63,7 @@
 	
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-push-12 medium-10 column">
+	<div class="small-push-12 medium-9 large-10 column">
 	<?php if (!empty($message)){echo $message;} ?>
 	<form action="admin_createuser.php" method="post" class="createUserForm">
 	<h2>Create User</h2>
