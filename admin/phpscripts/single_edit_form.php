@@ -1,6 +1,7 @@
 <?php
 
-    function single_edit($tbl, $col, $id) {
+    function single_edit($tbl, $col, $id) 
+    {
         $result = getSingle($tbl, $col, $id);
         $getResult = mysqli_fetch_array($result);
         
@@ -18,9 +19,11 @@
                 $fieldType = $dataType->type;
                 //echo $fieldType."</br>"; /*2=intType, 253=varchar, 252=text*/
                 
-                if($fieldName != $col){
+                if($fieldName != $col)
+                {
                     echo "<label>{$fieldName}</label><br>";
-                    if($fieldType != 252){
+                    if($fieldType != 252)
+                    {
                         echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"/><br><br>";
                     }
                     else
@@ -31,7 +34,7 @@
             }
             //echo mysqli_num_fields($result);
             
-            echo "<input type=\"submit\" value=\"Edit Content\"/>";
+            //echo "<input type=\"submit\" value=\"Edit Content\"/>";
         echo"</form>";
     }
 
