@@ -36,7 +36,7 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 -large-10 column">
+	<div class="small-12 medium-9 large-10 column">
 	<?php
 		while($row = mysqli_fetch_array($content))
 		{
@@ -54,7 +54,7 @@
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
     <script src="../js/vendor/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>

@@ -53,7 +53,7 @@
 
   <?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 -large-10 column">
+	<div class="small-12 medium-9 large-10 column">
 	<?php if (!empty($message)){echo $message;} ?>
 	<form action="admin_edituser.php" method="post" class="editUserForm">
 	<h2 class="hide">Edit User Form</h2>
@@ -76,7 +76,7 @@
 	<script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
     <script src="../js/vendor/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
