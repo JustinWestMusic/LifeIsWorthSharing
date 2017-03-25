@@ -34,7 +34,7 @@
 
   <?php include('includes/sidepanel.php'); ?>
 
-  <div class="small-12 medium-9 -large-10 column">
+  <div class="small-12 medium-9 large-10 column">
   <h2>Edit Content</h2>
   <?php
   
@@ -44,6 +44,8 @@
       single_edit($tbl, $col, $id);
 
   ?>
+
+  <input type="submit" value="Edit Content">
   </div>
 
   </section>
@@ -51,6 +53,6 @@
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/vendor/what-input.js"></script>
     <script src="../js/vendor/foundation.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
