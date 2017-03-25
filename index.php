@@ -106,7 +106,7 @@
 
 <section class="row-expanded centerTxt" id="promoVid">
 <div class="small-12 columns">
-<h2><span class="colourChng"><?php echo $row['index_promoVidSecTitle']; ?></h2>
+<h2><?php echo $row['index_promoVidSecTitle']; ?></h2>
 </div>
        <div class="row-expanded centerTxt" id="infoGraphic">
          <div class="small-12 large-8 small-centered columns">
