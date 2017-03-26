@@ -50,6 +50,8 @@
     <title>Create User</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
   </head>
 <body>
 	
