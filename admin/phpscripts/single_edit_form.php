@@ -21,14 +21,14 @@
                 
                 if($fieldName != $col)
                 {
-                    echo "<label>{$fieldName}</label><br>";
+                    echo "<label>{$fieldName}</label>";
                     if($fieldType != 252)
                     {
-                        echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"/><br><br>";
+                        echo "<input type=\"text\" name=\"{$fieldName}\" value=\"{$getResult[$i]}\"/>";
                     }
                     else
                     {
-                        echo "<textarea name=\"$fieldName\">{$getResult[$i]}</textarea><br><br";
+                        echo "<textarea name=\"$fieldName\">{$getResult[$i]}</textarea>";
                     }
                 }
             }
