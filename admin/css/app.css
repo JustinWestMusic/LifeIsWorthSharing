@@ -16,6 +16,7 @@ p, a
 {
 	font-size: 1.2em;
 }
+
 a
 {
 	color: black;
@@ -27,9 +28,58 @@ a:visited
 	color: black;
 }
 
+input[type="submit"]
+{
+	background-color: #fff;
+	border-radius: 5px;
+	color: #cf5662;
+	border: 3px #cf5662 solid;
+	font-size: 1.4em;
+	padding: 10px;
+	transition: background-color 0.5s ease-in-out;
+	margin-bottom: 20px;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #cf5662;
+	color: #fff;
+}
+
+textarea
+{
+	height: auto;
+	margin-bottom: 30px;
+}
+
+input[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color']
+{
+	margin-bottom: 30px;	
+}
+
+input[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color']:last-of-type
+{
+	margin-bottom: 10px;	
+}
+
 /*LOGIN*/
 
-#adminH1
+.spanCl
+{
+	color: #cf5662;
+}
+
+#loginHeader
+{
+	text-align: center;
+}
+
+#loginHeader h1
+{
+	font-weight: bold;
+}
+
+#adminH2
 {
 	margin-top: 50px;
 	color: black;
@@ -42,7 +92,6 @@ a:visited
 #form
 {
 	text-align: center;
-	background-color: rgba(210,210,210,0.2);
 	border-radius: 2px;
 	padding: 15px 0px 25px 0px;
 	min-width: 100%;
@@ -74,25 +123,6 @@ label
 	background-color: white;
 	border-radius: 2px;
 	font-family: 'Montserrat', Arial, sans-serif;
-}
-
-
-#submit
-{
-	background-color: white;
-	border-radius: 2px;
-	border-style: none;
-	color: black;
-	padding: 5px;
-	width: 125px;
-	transition: all .3s ease-in-out;
-	font-family: 'Montserrat', Arial, sans-serif;
-}
-
-#submit:hover
-{
-	background-color: #EBEBEB;
-	cursor: pointer;
 }
 
 /*INDEX*/
@@ -140,7 +170,26 @@ header
 
 #welcomePanel
 {
-	
+	text-align: center;
+	margin: 0 auto;
+}
+
+#welcomePanel h2
+{
+	margin-top: 20px;
+	color: black;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 3em;
+}
+
+#welcomePanel p
+{
+	margin-bottom: 20px;
+}
+
+#welcomePanel a
+{
+	margin-right: 20px;
 }
 
 .userName
@@ -157,19 +206,16 @@ header
 
 }
 
-#welcomePanel h2
-{
-	color: black;
-	text-align: left;
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 3em;
-}
-
 /*Side Panel*/
 
 #sidePanel
 {
 	background-color: #cf5662;
+}
+
+#sidePanel h2
+{
+	color: white;
 }
 
 .button
@@ -178,6 +224,49 @@ header
 	width: 100%;
 	text-align: left;
 	font-size: 1.2em;
+}
+
+/*User Settings*/
+
+.userSettings
+{
+	text-align: center;
+}
+
+.userSettings h2
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.userSettings a
+{
+	margin-right: 20px;
+}
+
+/*Content Settings*/
+
+.contentSettings
+{
+	text-align: center;
+}
+
+.contentSettings h2
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.contentSettings a
+{
+	margin-right: 20px;
+}
+
+/*Add Video*/
+
+.addVideo h2
+{
+	margin-top: 20px;
 }
 
 /*Edit and Create User*/
@@ -190,6 +279,39 @@ header
 .editUserForm
 {
 	margin-top: 20px;
+}
+
+/*Edit Content*/
+
+.editContent h2
+{
+	margin-top: 20px;
+}
+
+/*Delete User*/
+
+.deleteUser h2
+{
+	margin-top: 20px;
+}
+
+.deleteUser a
+{
+	display: block;
+	margin-bottom: 20px;
+}
+
+/*Delete Content*/
+
+.deleteContent h2
+{
+	margin-top: 20px;
+}
+
+.deleteContent a
+{
+	display: block;
+	margin-bottom: 20px;
 }
 
 /* Medium and up */
