@@ -32,11 +32,14 @@
     <title>Admin Login</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
   </head>
   <body>
         
-		<header>
-        <h1 id="adminH1">Admin Login</h1>
+		<header id="loginHeader">
+        <h1 id="adminH2"><span class="spanCl">#LIFE</span>IS<span class="spanCl">WORTH</span>SHARING</h1>
+        <h2>Admin Login</h2>
         </header>
 	
     <div class="row" id="form">   

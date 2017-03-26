@@ -25,6 +25,8 @@
     <title>Delete User</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
   </head>
 <body>
 	<h1 class="hide">Delete User</h1>
@@ -37,7 +39,8 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 large-10 column">
+	<div class="small-12 medium-9 large-10 column deleteUser">
+	<h2>Delete User</h2>
 	<?php
 		while($row = mysqli_fetch_array($users))
 		{

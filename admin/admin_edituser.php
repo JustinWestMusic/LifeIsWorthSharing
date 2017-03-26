@@ -42,6 +42,8 @@
     <title>Edit User Life is Worth Sharing</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
   </head>
 <body>
 
@@ -56,7 +58,7 @@
 	<div class="small-12 medium-9 large-10 column">
 	<?php if (!empty($message)){echo $message;} ?>
 	<form action="admin_edituser.php" method="post" class="editUserForm">
-	<h2 class="hide">Edit User Form</h2>
+	<h2>Edit User</h2>
 		<label>First Name:</label>
 		<input type="text" name="fname" value="<?php echo $popForm['user_fname']; ?>">
 		<label>Last Name:</label>

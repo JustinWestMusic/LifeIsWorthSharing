@@ -38,9 +38,9 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 large-10 column">
+	<div class="small-12 medium-9 large-10 column contentSettings">
 
-	<h2 class="hide">Welcom Panel</h2>
+	<h2>Content Settings</h2>
 
 	<a  href="admin_addVideo.php">Add Videos</a>
 

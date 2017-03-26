@@ -42,8 +42,9 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 large-10 column">
-	<h2 class="hide">Welcom Panel</h2>
+	<div class="small-12 medium-9 large-10 column userSettings">
+
+	<h2>User Settings</h2>
 
 
 	<a  href="admin_createuser.php">Create User</a>

@@ -43,6 +43,8 @@
     <title>Add Video</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
 </head>
 <body>
 <h1 class="hide">Add a Video</h1>
@@ -54,7 +56,7 @@
 
 	<?php include('includes/sidepanel.php'); ?>
 
-	<div class="small-12 medium-9 large-10 column">
+	<div class="small-12 medium-9 large-10 column addVideo">
 
 		<h2>Add a Video</h2>
 
