@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2017 at 02:17 AM
+-- Generation Time: Mar 27, 2017 at 06:55 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -72,7 +72,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_lname`, `user_email`, `user_name`, `user_pass`, `user_level`, `user_ip`, `user_lldate`, `user_attempts`, `user_firstLogin`) VALUES
-(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-25 01:47:59', 0, 1);
+(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-27 16:40:03', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -91,15 +91,7 @@ CREATE TABLE `tbl_videos` (
 --
 
 INSERT INTO `tbl_videos` (`videos_id`, `video`, `videos_title`) VALUES
-(1, 'test.mp4', 'boat'),
-(2, 'test2.mp4', 'Fl Studio Test'),
-(3, '1908212_10153324530795844_7615550569492932725_n.jpg', 'dasdsa'),
-(4, '20140921_121230.jpg', 'dfds'),
-(5, 'test3.mp4', 'test3'),
-(6, 'test3 - Copy.mp4', 'SFDFDS'),
-(7, 'clinwest-desktop.png', 'fdssdf'),
-(9, 'small.mp4', 'meredith '),
-(10, '2016-08-26-1958-26.mp4', 'sad');
+(1, 'test.mp4', 'boat');
 
 --
 -- Indexes for dumped tables
@@ -141,7 +133,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_videos`
 --
 ALTER TABLE `tbl_videos`
-  MODIFY `videos_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `videos_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
