@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <script src="js/TweenMax.min.js"></script>
-    <script src="js/ScrollToPlugin.min.js"></script>
   </head>
 
   <body>
@@ -42,9 +41,9 @@
         <div id="top-menu">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#" id="1">About</a></li>
-            <li><a href="#" id="2">Stories</a></li>
-            <li><a href="#" id="3">Facts</a></li>
+            <li><a href="#info">Mission</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#facts">About</a></li>
             <h4 id="headerRegBtn" class="small-centered"><a id="4">Register</a></h4>
 
        </ul>
@@ -80,14 +79,14 @@
          </div>
        </section>
 
-       <section class="row-epanded centerTxt" id="stories">
+       <section class="row-expanded centerTxt" id="stories">
          <div class="small-12 large-8 small-centered columns" id="lifeSec2">
            <h2><?php echo $row['index_sec2Title']; ?></h2>
            
           <?php while($row2 = mysqli_fetch_array($getVideos)): ?>
            
            <?php echo "<h2>{$row2['videos_title']}</h2>"; ?>
-           <?php echo "<video controls> <source src=\"videos/{$row2['video']}\" type=\"video/mp4\"> </video>"; ?>
+           <?php echo "<video controls> <source src=\"videos/{$row2['video']}\" class=\"flex-video widescreen\" type=\"video/mp4\"> </video>"; ?>
 
            <?php endwhile; ?>
 
@@ -110,7 +109,11 @@
 </div>
        <div class="row-expanded centerTxt" id="infoGraphic">
          <div class="small-12 large-8 small-centered columns">
-           <img src="images/video.gif" alt="Stories">
+           <video controls>
+
+            <source src="videos/lifeisworthsharing-hashtag.mp4" class="flex-video widescreen" type="video/mp4">
+
+           </video>
          </div>
             </div>
        </section>
