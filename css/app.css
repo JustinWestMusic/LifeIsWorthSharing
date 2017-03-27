@@ -18,6 +18,16 @@ p
 	font-size: 18px;
 }
 
+span
+{
+	color: #cf5662;
+}
+
+video
+{
+	width: 100%;
+}
+
 /*Header*/
 
 .title-bar
@@ -77,16 +87,12 @@ p
 #headerCapt h2
 {
 	font-family: 'Montserrat', sans-serif;
-	padding-top: 30%;
+	padding-top: 200px;
 	padding-left: 5%;
 	font-size: 3.2em;
 	color: #fff;
 }
 
-#headerCapt h2::first-letter
-{
-	color: #cf5662;
-}
 
 #mainNav
 {
@@ -141,7 +147,7 @@ p
 
 .icons2
 {
-  width: 8%;
+  max-width: 40px;
   padding: 3px;
   display: inline
 }
@@ -375,7 +381,7 @@ footer a
 
 	#headerCapt h2
 	{
-		font-size: 5.2em;
+		font-size: 4.2em;
 	}
 
 	#facts h2
@@ -424,7 +430,7 @@ footer a
 
 	#headerCapt h2
 	{
-		font-size: 5.6em;
+		font-size: 4.6em;
 	}
 
 	#mainNav
