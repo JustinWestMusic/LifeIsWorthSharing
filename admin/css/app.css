@@ -49,17 +49,19 @@ input[type="submit"]:hover
 textarea
 {
 	height: auto;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 input[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color']
 {
-	margin-bottom: 30px;	
+	margin-bottom: 20px;	
 }
 
-input[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color']:last-of-type
+.cmsIcon
 {
-	margin-bottom: 10px;	
+	width: 80px;
+	display: block;
+	margin: auto;
 }
 
 /*LOGIN*/
@@ -236,7 +238,7 @@ header
 .userSettings h2
 {
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .userSettings a
@@ -332,5 +334,9 @@ header
 /* Large and up */
 @media screen and (min-width: 64em) 
 {
+	.cmsIcon
+	{
+		width: 120px;
+	}
 
 }
