@@ -46,12 +46,22 @@
 
 	<h2>User Settings</h2>
 
+	<div class="row float-center">
 
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/createuser.svg" class="cmsIcon"></object>
 	<a  href="admin_createuser.php">Create User</a>
+	</div>
 
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/edituser.svg" class="cmsIcon"></object>
 	<a href="admin_edituser.php">Edit User</a>
+	</div>
 
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/deleteuser.svg" class="cmsIcon"></object>
 	<a href="admin_deleteuser.php">Delete User</a>
+	</div>
 
 	</div>
 
