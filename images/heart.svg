@@ -5,12 +5,17 @@
 <style type="text/css">
 	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#C95460;stroke-width:18;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M491,777.6"/>
+<path class="st0" d="M484.2,815.9"/>
 <g>
-	<ellipse class="st1" cx="275.8" cy="303.1" rx="232.8" ry="242.1"/>
-	<path class="st1" d="M501.6,362.5V921c0,0-579.9-363-436.4-721"/>
-	<ellipse class="st1" cx="724.2" cy="303.1" rx="232.8" ry="242.1"/>
-	<path class="st1" d="M498.4,362.5V921c0,0,579.9-363,436.4-721"/>
+	<ellipse class="st1" cx="337.7" cy="345.7" rx="182.8" ry="190.1"/>
+	<path class="st1" d="M515,392.4V831c0,0-455.4-285.1-342.7-566.2"/>
+	<ellipse class="st1" cx="689.8" cy="345.7" rx="182.8" ry="190.1"/>
+	<path class="st1" d="M512.5,392.4V831c0,0,455.4-285.1,342.7-566.2"/>
 </g>
+<line class="st2" x1="236.8" y1="593.4" x2="361.2" y2="593.4"/>
+<line class="st2" x1="630.7" y1="593.4" x2="795" y2="593.4"/>
+<path class="st2" d="M785.1,593.4"/>
+<polyline class="st2" points="352.9,599.5 391,493.2 429.6,573.8 512.5,392.4 610,665 638.7,587.4 "/>
 </svg>
