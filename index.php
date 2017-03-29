@@ -59,7 +59,7 @@
       </div>
 
         
-        <div class="small-pull-4 large-pull-5 columns" id="socialIcons2">
+        <div class="small-12 columns" id="socialIcons2">
         <a href="#"><img src="images/facebook.svg" class="icons2" alt="Facebook"></a>
 
         <a href="#"><img src="images/instagram.svg" class="icons2" alt="Instagram"></a>
@@ -86,7 +86,7 @@
           <?php while($row2 = mysqli_fetch_array($getVideos)): ?>
            
            <?php echo "<h2>{$row2['videos_title']}</h2>"; ?>
-           <?php echo "<video controls> <source src=\"videos/{$row2['video']}\" class=\"flex-video widescreen\" type=\"video/mp4\"> </video>"; ?>
+           <?php echo "<video controls poster=\"images/patricia-smith-poster.jpg\"> <source src=\"videos/{$row2['video']}\" class=\"flex-video\" type=\"video/mp4\"> </video>"; ?>
 
            <?php endwhile; ?>
 
@@ -103,29 +103,31 @@
          </div>
        </section>
 
-<section class="row-expanded centerTxt" id="promoVid">
+<section class="row centerTxt" id="promoVid">
 <div class="small-12 columns">
 <h2><?php echo $row['index_promoVidSecTitle']; ?></h2>
 </div>
-       <div class="row-expanded centerTxt" id="infoGraphic">
-         <div class="small-12 large-8 small-centered columns">
+       <div class="row centerTxt" id="infoGraphic">
+         <div class="small-12 medium-6 columns">
            <video controls>
 
-            <source src="videos/lifeisworthsharing-hashtag.mp4" class="flex-video widescreen" type="video/mp4">
+            <source src="videos/lifeisworthsharing-hashtag.mp4" class="flex-video" type="video/mp4">
 
            </video>
+           </div>
+            
+            <div class="small-12 medium-6 columns">
+            <video controls poster="images/infographic-poster.jpg">
 
-            <video controls>
-
-            <source src="videos/infographic.mp4" class="flex-video widescreen" type="video/mp4">
+            <source src="videos/infographic.mp4" class="flex-video" type="video/mp4">
 
            </video>
          </div>
             </div>
        </section>
 
-      <section class="row-expanded centerTxt" id="register">
-      <div class="small-12 small-centered columns" id="lifeSec4">
+      <section class="row centerTxt" id="register">
+      <div class="small-12 columns" id="lifeSec4">
            <h2><?php echo $row['index_sec4Title']; ?></h2>
            <h3><?php echo $row['index_sec4Title2']; ?></h3>
 
