@@ -42,9 +42,20 @@
 	<h2> <?php echo welcomeTime(); ?> <?php echo $_SESSION['users_fname']; ?>!</h2>
 	<p>What will you be doing <?php echo timeOfDay(); ?></p>
 
-	<a  href="admin_content.php">Content Settings</a>
 
+	<div class="row float-center">
+
+	<div class="small-12 medium-6 column float-center">
+	<object data="images/contentsettings.svg" class="cmsIcon"></object>
+	<a  href="admin_content.php">Content Settings</a>
+	</div>
+
+	<div class="small-12 medium-6 column float-center">
+	<object data="images/usersettings.svg" class="cmsIcon"></object>
 	<a href="admin_users.php">User Settings</a>
+	</div>
+
+	</div>
 
 	</div>
 
