@@ -93,7 +93,6 @@ video
 	color: #fff;
 }
 
-
 #mainNav
 {
 	background-color: #cf5662;
@@ -143,7 +142,6 @@ video
 	width: 40px;
 	padding-top: 10px;
 }
-
 
 .icons2
 {
@@ -258,10 +256,15 @@ video
 #promoVid h2
 {
 	margin-top: 100px;
+	font-size: 28px;
 }
 
-
 /*Register Section*/
+
+#register h2
+{
+	margin-top: 50px;
+}
 
 #register h3:nth-child(2)
 {
@@ -400,6 +403,11 @@ footer a
 	{
 		font-size: 2.5em;
 	}
+
+	#promoVid h2
+	{
+		font-size: 36px;
+	}
 }
 
 @media screen and (min-width: 64em) /*Large*/
@@ -425,7 +433,7 @@ footer a
 
 	h2
 	{
-		font-size: 70px;
+		font-size: 65px;
 	}
 
 	#headerCapt h2
@@ -476,32 +484,36 @@ footer a
 
 	}
 
+	#footerNav
+	{
+		padding: 20px;
+	}
 
-#footerNav
-{
-	padding: 20px;
-}
+	#footerNav ul li
+	{
+		display: inline;
+		text-decoration: none;
+		list-style-type: none;
+	}
 
-#footerNav ul li
-{
-	display: inline;
-	text-decoration: none;
-	list-style-type: none;
-}
+	#footerNav ul li a
+	{
+		color: #FFFFFF;
+		padding: 40px;
+		font-size: 20px;
 
-#footerNav ul li a
-{
-	color: #FFFFFF;
-	padding: 40px;
-	font-size: 20px;
+	}
 
-}
+	.icons
+	{
+	  width: 3%;
+	  padding: 3px;
+	}
 
-.icons
-{
-  width: 3%;
-  padding: 3px;
-}
+	#promoVid h2
+	{
+		font-size: 65px;
+	}
 
 
  }
