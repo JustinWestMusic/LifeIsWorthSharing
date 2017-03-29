@@ -45,9 +45,11 @@
       $id=1;
       single_edit($tbl, $col, $id);
 
+      //echo "<input type=\"submit\" value=\"Edit Content\">";
+
   ?>
 
-  <input type="submit" value="Edit Content">
+  
   </div>
 
   </section>
