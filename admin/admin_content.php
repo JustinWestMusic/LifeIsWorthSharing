@@ -41,12 +41,25 @@
 	<div class="small-12 medium-9 large-10 column contentSettings">
 
 	<h2>Content Settings</h2>
+	
+	<div class="row float-center">
 
-	<a  href="admin_addVideo.php">Add Videos</a>
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/addvideo.svg" class="cmsIcon"></object>
+	<a  href="admin_addvideo.php">Add Videos</a>
+	</div>
 
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/editcontent.svg" class="cmsIcon"></object>
 	<a href="admin_editContent.php">Edit Content</a>
+	</div>
 
+	<div class="small-12 medium-4 column float-center">
+	<object data="images/deletecontent.svg" class="cmsIcon"></object>
 	<a href="admin_deleteContent.php">Delete Content</a>
+	</div>
+
+	</div>
 
 	</div>
 	
