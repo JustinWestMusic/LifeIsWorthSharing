@@ -71,7 +71,7 @@
        </div>
 
        <section  class="row centerTxt" id="info">
-         <div class="small-12 large-8 small-centered columns" id="lifeSec1">
+         <div class="small-12 small-centered large-8 columns" id="lifeSec1">
          
            <h2><?php echo $row['index_sec1Title']; ?></h2>
            <p><?php echo $row['index_sec1Text']; ?></p>
@@ -80,7 +80,7 @@
        </section>
 
        <section class="row-expanded centerTxt" id="stories">
-         <div class="small-12 large-8 small-centered columns" id="lifeSec2">
+         <div class="small-12 small-centered columns large-8" id="lifeSec2">
            <h2><?php echo $row['index_sec2Title']; ?></h2>
            
           <?php while($row2 = mysqli_fetch_array($getVideos)): ?>
@@ -112,6 +112,12 @@
            <video controls>
 
             <source src="videos/lifeisworthsharing-hashtag.mp4" class="flex-video widescreen" type="video/mp4">
+
+           </video>
+
+            <video controls>
+
+            <source src="videos/infographic.mp4" class="flex-video widescreen" type="video/mp4">
 
            </video>
          </div>
