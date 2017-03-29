@@ -20,7 +20,6 @@ p, a
 a
 {
 	color: black;
-	text-decoration: underline;
 }
 
 a:visited
@@ -62,6 +61,7 @@ input[type='text'], [type='password'], [type='date'], [type='datetime'], [type='
 	width: 80px;
 	display: block;
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 /*LOGIN*/
@@ -186,7 +186,7 @@ header
 
 #welcomePanel p
 {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 #welcomePanel a
@@ -256,7 +256,7 @@ header
 .contentSettings h2
 {
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .contentSettings a
