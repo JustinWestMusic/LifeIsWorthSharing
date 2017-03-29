@@ -34,7 +34,7 @@
             }
             //echo mysqli_num_fields($result);
             
-            //echo "<input type=\"submit\" value=\"Edit Content\"/>";
+            echo "<input type=\"submit\" value=\"Edit Content\"/>";
         echo"</form>";
     }
 
