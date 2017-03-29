@@ -114,7 +114,7 @@
 		$to = $email;
 		$subj = "Message from admin site";
 		$body = "Email: {$email}\n\nUsername: {$username}\n\nPassword: {$password}";
-		$linkToSite = "Hello". " ". $fname . ", ". "You have just signed up at AdminTest. Using the provided password below please go to https://justinwest.ca/admintest/admin_login.php to Login.";
+		$linkToSite = "Hello". " ". $fname . ", ". "you have just signed up for an acount at Life is Worth Sharing. Using the credentials below please go to https://justinwest.ca/organdonation/admin/admin_login.php to login.";
 			
 		//echo $body;
 		
