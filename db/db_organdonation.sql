@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2017 at 06:55 PM
+-- Generation Time: Mar 29, 2017 at 04:05 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -72,7 +72,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_lname`, `user_email`, `user_name`, `user_pass`, `user_level`, `user_ip`, `user_lldate`, `user_attempts`, `user_firstLogin`) VALUES
-(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-27 16:40:03', 0, 1);
+(1, 'Justin', 'West', '', 'jwest', '1234', '1', 0, '2017-03-28 18:19:52', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -91,7 +91,7 @@ CREATE TABLE `tbl_videos` (
 --
 
 INSERT INTO `tbl_videos` (`videos_id`, `video`, `videos_title`) VALUES
-(1, 'test.mp4', 'boat');
+(1, 'patricia-smith-interview.mp4', 'Patricia Smith');
 
 --
 -- Indexes for dumped tables
