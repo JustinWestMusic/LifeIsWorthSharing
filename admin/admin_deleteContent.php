@@ -43,16 +43,16 @@
 	<?php
 		while($row = mysqli_fetch_array($content))
 		{
-			echo "{$row['index_headerCaption']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec1Title']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec1Text']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec2Title']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec3Title']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec3Fact1']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_promoVidSecTitle']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec4Title']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec4Title2']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
-			echo "{$row['index_sec4Text']}<a href=\"phpscripts/caller.php?caller_id=delete&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_headerCaption']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec1Title']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec1Text']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec2Title']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec3Title']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec3Fact1']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_promoVidSecTitle']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec4Title']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec4Title2']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
+			echo "{$row['index_sec4Text']}<a href=\"phpscripts/caller.php?caller_id=deleteCon&id={$row['index_id']}\">Delete Content</a>";
 		}
 
 	?>
