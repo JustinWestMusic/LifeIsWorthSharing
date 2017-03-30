@@ -93,7 +93,7 @@
 		}
 		else
 		{
-			echo "This person is protected...";
+			echo "This user cannot be deleted.";
 		}
 
 		mysqli_close($link);
