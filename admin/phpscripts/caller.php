@@ -9,6 +9,16 @@
 			{
 				logged_out();
 			}
+			else if($dir == "delete")
+			{
+				$id = $_GET['id'];
+				deleteUser($id);
+			}
+			else if($dir == "deleteCon")
+			{
+				$id = $_GET['id'];
+				deleteContent($id);
+			}
 			else
 			{
 				echo "caller id was passed incorrectly.";
